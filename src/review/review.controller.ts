@@ -1,5 +1,5 @@
 import { Response, Request } from "express"
- import { IReview } from "./review.interface";
+import { IReview } from "./review.interface";
 import Review from "./review.model";
 
 const getReviews = async (req: Request, res: Response): Promise<void> => {
@@ -17,8 +17,8 @@ const getReview = async (req: Request, res: Response): Promise<void> => {
       params: { id },
     } = req
     const getReview: IReview | null = await Review.findOne(
-    { _id: id }
-  )
+      { _id: id }
+    )
     res.status(200).json({
       review: getReview
     })

@@ -1,4 +1,4 @@
-export interface IMoviePreview{
+export interface IMoviePreview {
   movie_id: number;
   title: string;
   image_url: string;
@@ -9,7 +9,7 @@ export interface IMoviePreview{
   url: string;
 }
 
-export interface IMovieOverview{
+export interface IMovieOverview {
   movie_id: number;
   title: string;
   image_url: string;

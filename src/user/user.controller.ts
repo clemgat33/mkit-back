@@ -1,5 +1,5 @@
 import { Response, Request } from "express"
- import { IUser } from "./user.interface";
+import { IUser } from "./user.interface";
 import User from "./user.model";
 
 const getUsers = async (req: Request, res: Response): Promise<void> => {
@@ -17,8 +17,8 @@ const getUser = async (req: Request, res: Response): Promise<void> => {
       params: { id },
     } = req
     const getUser: IUser | null = await User.findOne(
-    { _id: id }
-  )
+      { _id: id }
+    )
     res.status(200).json({
       user: getUser
     })

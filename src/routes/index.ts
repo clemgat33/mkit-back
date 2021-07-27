@@ -15,7 +15,6 @@ router.get('/api/search-movies/:query', searchMovies)
 router.get('/api/get-movie/:type/:id', getMovie)
 
 
-router.get("/api/reviews", getReviews)
 router.get("/api/review/:id", getReview)
 router.post("/api/add-review", addReview)
 router.put("/api/edit-review/:id", updateReview)
